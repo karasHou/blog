@@ -8,19 +8,20 @@ https://zhuanlan.zhihu.com/p/551291839
 export default defineConfig({
   title: "karasHou's blog", //站点标题
   description: '个人博客',
+  base: "/",
   head: [
     // 改变title的图标
     [
       'link',
       {
         rel: 'icon',
-        href: '../public/猴子.ico' //图片放在public文件夹下
+        href: '/猴子.ico' //图片放在public文件夹下
       }
     ]
   ],
   themeConfig: {
     siteTitle: "karasHou's blog",
-    logo: '../public/猴子.ico',
+    logo: '/猴子.ico',
 
     /** 导航配置 */
     nav: [

@@ -7,7 +7,7 @@ title: karasHou's blog
 hero:
   name: KarasHou
   image:
-    src: /public/富冈义勇.jpg
+    src: /富冈义勇.jpg
   tagline: 一屋两人，三餐四季，陪你共度余生❤
   actions:
     # - theme: brand
