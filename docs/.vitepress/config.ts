@@ -25,17 +25,18 @@ export default defineConfig({
 
     /** 导航配置 */
     nav: [
-      // {
-      //   text: 'Drop Menu',
-      //   items: [
-      //     { text: 'Item A', link: '/item-1' },
-      //     { text: 'Item B', link: '/item-2' },
-      //     { text: 'Item C', link: '/item-3' }
-      //   ]
-      // }
       { text: '文章', link: '/document/articles/index' },
       { text: '工具', link: '/document/resource/index' }
     ],
+    sidebar: {
+      '/document/articles/': [{
+        text: '文章',
+        collapsible: true,
+        items: [
+          { text: '低代码项目', link: '/document/articles/low-code-project' },
+        ]
+      }]
+    },
     socialLinks: [{ icon: 'github', link: 'https://github.com/karasHou' }]
   }
 });

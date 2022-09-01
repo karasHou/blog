@@ -14,8 +14,8 @@ hero:
     #   text: Get Started
     #   link: /guide/getting-started
     - theme: brand
-      text: View on GitHub
-      link: https://github.com/karasHou
+      text: 查看文章列表
+      link: /document/articles/index
 # features:
 #   - title: "Vite: The DX that can't be beat"
 #     details: Feel the speed of Vite. Instant server start and lightning fast HMR that stays fast regardless of the app size.
