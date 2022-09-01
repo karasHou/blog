@@ -2,7 +2,8 @@
 https://vitepress.vuejs.org/guide/what-is-vitepress
 
 # 如何发布
-
+1. 提交当前修改
+2. npm run deploy
 
 # TODO
 
