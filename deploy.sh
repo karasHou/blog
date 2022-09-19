@@ -13,6 +13,10 @@ cd docs/.vitepress/dist
 # echo 'www.example.com' > CNAME
 
 git init
+
+git config --local user.name "猴头咕"
+git config --local user.email "948618251@qq.com"
+
 git add -A
 git commit -m 'deploy'
 
