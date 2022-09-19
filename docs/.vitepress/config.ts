@@ -25,22 +25,22 @@ export default defineConfig({
 
     /** 导航配置 */
     nav: [
-      { text: '文章', link: '/document/Articles/index' },
+      { text: '文章', link: '/document/articles/index' },
       { text: '工具', link: '/document/resource/index' }
     ],
     sidebar: {
-      '/document/Articles/': [{
+      '/document/articles/': [{
         text: '文章',
         collapsible: true,
         items: [
           {
-            text: '日常记录', link: '/document/Articles/Other.md', items: [{
-              text: '浏览器图片加载策略', link: '/document/Articles/other/imageLoad.md'
+            text: '日常记录', link: '/document/articles/other.md', items: [{
+              text: '浏览器图片加载策略', link: '/document/articles/other/imageLoad.md'
             }]
           },
           {
-            text: '低代码项目', link: '/document/Articles/LowCodeProject/', items: [{
-              text: '基础搭建', link: '/document/Articles/LowCodeProject/基础搭建.md'
+            text: '低代码项目', link: '/document/articles/lowcodeproject/', items: [{
+              text: '基础搭建', link: '/document/articles/lowcodeproject/基础搭建.md'
             }]
           },
         ]
