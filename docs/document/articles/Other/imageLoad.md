@@ -11,8 +11,8 @@
 实际上，只要 img 元素设置了 src，无论这个 img 元素是否挂载到了页面内，图片都会被下载，可通过以下代码实验：
 
 ```js
-var img = new Image();
-img.src = 'https://dystroy.org/stripad/icon-v1.png';
+const img = new Image()
+img.src = 'https://dystroy.org/stripad/icon-v1.png'
 ```
 在控制台执行以上代码，可在network面板内看到图片立即被下载了。
 

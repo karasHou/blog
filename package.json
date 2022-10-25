@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm run docs:dev",
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
@@ -11,14 +12,19 @@
     "deploy": "bash ./deploy.sh",
     "preinstall": "npx only-allow pnpm"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "blog"
+  ],
+  "author": "karashou",
   "license": "ISC",
   "dependencies": {
-    "vitepress": "1.0.0-alpha.21"
+    "vitepress": "1.0.0-alpha.15"
   },
   "volta": {
     "node": "16.18.0",
     "npm": "7.24.2"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.27.0"
   }
 }
