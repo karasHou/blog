@@ -3,6 +3,9 @@
 # 忽略错误
 set -e
 
+# 先推送本地master仓库
+git push
+
 # 构建
 npm run docs:build
 
