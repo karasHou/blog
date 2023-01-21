@@ -27,7 +27,6 @@ export default defineConfig({
   ],
   lastUpdated: true,
   themeConfig: {
-    siteTitle: 'karasHou\'s blog',
     logo: '/猴子.ico',
 
     /** 导航配置 */
