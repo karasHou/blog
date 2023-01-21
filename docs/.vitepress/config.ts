@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import sidebar from './sideConfig'
+import { getSideBar } from 'vitepress-plugin-autobar'
 
 /*
 参考配置文档：
@@ -25,16 +25,21 @@ export default defineConfig({
       },
     ],
   ],
+  lastUpdated: true,
   themeConfig: {
     siteTitle: 'karasHou\'s blog',
     logo: '/猴子.ico',
 
     /** 导航配置 */
-    nav: [
-      { text: '文章', link: '/document/articles/index' },
-      { text: '工具', link: '/document/resource/index' },
-    ],
-    sidebar,
+    // TODO: 之后改下路径
+    // nav: [
+    //   { text: '文章', link: '/document/articles/index' },
+    //   { text: '工具', link: '/document/resource/index' },
+    // ],
+    sidebar: getSideBar('./docs', {
+      ignoreMDFiles: ['index'],
+      ignoreDirectory: ['node_modules'],
+    }),
     socialLinks: [{ icon: 'github', link: 'https://github.com/karasHou' }],
   },
 })

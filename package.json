@@ -18,7 +18,9 @@
   "author": "karashou",
   "license": "ISC",
   "dependencies": {
-    "vitepress": "1.0.0-alpha.38"
+    "vitepress": "1.0.0-alpha.40",
+    "vitepress-plugin-autobar": "^1.0.8",
+    "vue": "3"
   },
   "volta": {
     "node": "16.18.0",
