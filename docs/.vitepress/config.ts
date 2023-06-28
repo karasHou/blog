@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { getSideBar } from 'vitepress-plugin-autobar'
+import { getSideBar } from '../../src/autoBar'
 
 /*
 参考配置文档：
@@ -39,6 +39,17 @@ export default defineConfig({
       ignoreMDFiles: ['index'],
       ignoreDirectory: ['node_modules'],
     }),
+    // sidebar: [
+    //   {
+    //     text: '测试',
+    //     items: [
+    //       {
+    //         text: '02.lowcode',
+    //         link: '/02.lowcode/00.homepage.md',
+    //       },
+    //     ],
+    //   },
+    // ],
     socialLinks: [{ icon: 'github', link: 'https://github.com/karasHou' }],
   },
 })

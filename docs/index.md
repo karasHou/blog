@@ -23,12 +23,12 @@ features:
   - icon: 📒
     title: 文章
     details: 日常文章
-    link: /01.日常文章//lodash path妙用
+    link: /01.日常文章/lodash path妙用
 
   - icon: 📦
-    title: 低代码项目
+    title: 低代码技术解析
     details: 
-    link: /02.低代码项目/00.首页
+    link: /02.lowcode/00.homepage
 
   - icon: 🔧
     title: 工具、资源库
