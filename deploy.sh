@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 
+# 获取模式： ssh or https
+MODE=$1
+
 # 忽略错误
 set -e
 
@@ -27,6 +30,14 @@ git commit -m 'deploy'
 # git push -f git@github.com:karasHou/karasHou.github.io.git master
 
 # 如果是部署到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:karasHou/blog.git master:gh-pages
+
+if [ "$MODE" = "https" ]; then
+# https模式
+  git push -f https://github.com/karasHou/blog.git master:gh-pages
+else
+# ssh模式（默认
+  git push -f git@github.com:karasHou/blog.git master:gh-pages
+fi
+
 
 cd -
