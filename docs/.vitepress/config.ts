@@ -25,7 +25,6 @@ export default defineConfig({
       },
     ],
   ],
-  lastUpdated: true,
   themeConfig: {
     logo: '/猴子.ico',
 
