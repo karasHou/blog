@@ -101,8 +101,7 @@ function side(baseDir: string, options?: Options) {
     }
   })
 
-  // eslint-disable-next-line no-console
-  console.info('sidebar is create:', JSON.stringify(sidebars, null, 2))
+  // console.info('sidebar is create:', JSON.stringify(sidebars, null, 2))
   return sidebars
 }
 
