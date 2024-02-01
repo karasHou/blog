@@ -21,12 +21,12 @@ export default defineConfig({
       'link',
       {
         rel: 'icon',
-        href: '/猴子.ico', // 图片放在public文件夹下
+        href: './favicon.ico', // 图片放在public文件夹下
       },
     ],
   ],
   themeConfig: {
-    logo: '/猴子.ico',
+    logo: './favicon.ico',
 
     /** 导航配置 */
     // TODO: 之后改下路径

@@ -19,14 +19,13 @@
   "author": "karashou",
   "license": "ISC",
   "dependencies": {
-    "glob": "^8.0.3",
+    "glob": "^10.3.10",
     "lodash": "^4.17.21",
-    "vitepress": "1.0.0-beta.3",
+    "vitepress": "1.0.0-rc.40",
     "vue": "3"
   },
   "volta": {
-    "node": "16.18.0",
-    "npm": "7.24.2",
+    "node": "18.19.0",
     "pnpm": "8.10.0"
   },
   "devDependencies": {
