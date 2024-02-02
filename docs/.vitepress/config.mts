@@ -1,3 +1,4 @@
+import fs from 'fs/promises'
 import { defineConfig } from 'vitepress'
 import { getSideBar } from '../../src/autoBar'
 
@@ -50,5 +51,20 @@ export default defineConfig({
     //   },
     // ],
     socialLinks: [{ icon: 'github', link: 'https://github.com/karasHou' }],
+  },
+  async buildEnd(siteConfig) {
+    // 配置网站基础路径
+    const BLOG_BASE_API = 'https://karashou.github.io/blog'
+
+    let siteMapStr = ''
+    for (const page of siteConfig.pages) siteMapStr += `${BLOG_BASE_API}/${page.replace(/md$/, 'html')}\n`
+
+    try {
+      // 生成文件
+      await fs.writeFile(`${siteConfig.outDir}/sitemap.txt`, siteMapStr)
+    }
+    catch (err) {
+      console.log('create sitemap.txt failed!', err)
+    }
   },
 })
